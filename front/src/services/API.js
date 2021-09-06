@@ -19,12 +19,21 @@ function updateAirplane(item) {
     return axiosInstance({
         method: 'put',
         url: `airplane/${item.id}/`,
-        data: {...item}
+        data: item
     })
+}
+
+function createAirplane(item) {
+    // return axiosInstance({
+    //     method: 'post',
+    //     url: 'airplane/',
+    //     data: item
+    // })
+    return axiosInstance.post('airplane/', item)
 }
 
 function deleteAirplane(id) {
     return axiosInstance.delete(`airplane/${id}/`)
 }
 
-export {getAirplanes, getAirplane, updateAirplane, deleteAirplane}
+export {getAirplanes, getAirplane, updateAirplane, deleteAirplane, createAirplane}

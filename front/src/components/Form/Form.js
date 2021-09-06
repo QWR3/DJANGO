@@ -1,21 +1,27 @@
 import {useEffect, useState} from "react";
-import {updateAirplane} from "../../services/API";
+import {createAirplane, updateAirplane} from "../../services/API";
 
-export default function Form({item}) {
+export default function Form({item, do_you_wont_update_component}) {
     const [formState, setFormState] = useState({...item})
     useEffect(() => {
         setFormState({...item})
-        //eslint-disable-next-line
-    }, [item.id])
+        // eslint-disable-next-line
+    }, [item?.id])
 
     function onSubmit(e) {
         e.preventDefault()
-        updateAirplane(formState).then(() => {
+        if (do_you_wont_update_component) {
+            updateAirplane(formState).then(() => {
+                    window.location.reload()
+                }
+            )
+        } else {
+            console.log(formState)
+            createAirplane(formState).then(() => {
                 window.location.reload()
-            }
-        )
+            })
+        }
     }
-
 
     function onChange(e) {
         setFormState({...formState, [e.target.name]: e.target.value})
@@ -35,8 +41,12 @@ export default function Form({item}) {
                 <p>number of passengers</p>
                 <input type="number" name={'number_of_passengers'} placeholder={'number of passengers'}
                        onChange={onChange} value={formState.number_of_passengers}/>
+                <p>max range of flight</p>
+                <input type="number" name={'max_range_of_flight'} placeholder={'max range of flight'}
+                       onChange={onChange} value={formState.max_range_of_flight}/>
                 <br/>
-                <button>update</button>
+                {do_you_wont_update_component && <button>update</button>}
+                {!do_you_wont_update_component && <button>create</button>}
             </form>
         </div>
     )

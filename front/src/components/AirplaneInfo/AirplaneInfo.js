@@ -20,7 +20,8 @@ export default function AirplaneInfo({id}) {
             <h4>speed - {chosen?.speed}</h4>
             <h4>year - {chosen?.year}</h4>
             <h4>number of passengers - {chosen?.number_of_passengers}</h4>
-            {chosen && <Form item={chosen}/>}
+            <h4>max range of flight - {chosen?.max_range_of_flight}</h4>
+            {chosen && <Form item={chosen} do_you_wont_update_component={true}/>}
             <button onClick={deleteItem}>delete</button>
         </div>
     )

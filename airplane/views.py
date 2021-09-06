@@ -19,7 +19,8 @@ class Airplane_list_get_create(APIView):
 
     def post(self, *args, **kwargs):
         data = self.request.data
-        serializer = AirplaneListSerializer(data=data)
+        print(data)
+        serializer = AirplaneSerializer(data=data)
         is_valid = serializer.is_valid()
         if not is_valid:
             return Response(serializer.errors, status.HTTP_400_BAD_REQUEST)
