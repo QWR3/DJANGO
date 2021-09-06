@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5de918f9-7beb-4666-95b3-d4e05a444794" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../front/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/.idea/front.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/generate-react-cli.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/components/Airplane/Airplane.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/components/Airplanes/Airplanes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/reportWebVitals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/services/API.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../airplane/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../airplane/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../airplane/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../airplane/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../airplane/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../airplane/views.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1xkbB9lkClUXWXAyvfPjTWFy7Vy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5de918f9-7beb-4666-95b3-d4e05a444794" name="Changes" comment="" />
+      <created>1630901895447</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1630901895447</updated>
+      <workItem from="1630901896974" duration="56000" />
+      <workItem from="1630931051933" duration="36000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
