@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "corsheaders",
 
+    'auto_parks',
+    'cars'
 
 ]
 
@@ -84,7 +86,7 @@ WSGI_APPLICATION = 'DJANGO.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'airplane',
+        'NAME': 'django_hw4',
         'USER': 'root',
         'PASSWORD': 'root',
         'HOST': 'localhost',
