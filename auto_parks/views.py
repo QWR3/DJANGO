@@ -1,14 +1,11 @@
-from django.forms import model_to_dict
-from django.http import QueryDict
 from rest_framework import status
 from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView, GenericAPIView
-from django.shortcuts import render
 from rest_framework.response import Response
 
 from cars.models import CarModel
 from cars.serializers import CarSerializer
-from .serializers import AutoParkSerializer
 from .models import AutoParkModel
+from .serializers import AutoParkSerializer
 
 
 # Create your views here.
