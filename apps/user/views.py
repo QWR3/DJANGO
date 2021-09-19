@@ -4,10 +4,12 @@ from rest_framework.generics import GenericAPIView, ListCreateAPIView, RetrieveU
 from rest_framework.mixins import UpdateModelMixin
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
+from rest_framework.permissions import IsAdminUser
 
 from apps.profile_.serializers import ProfileAvatarSerializer
 from apps.user.models import CustomUser
 from apps.user.serializers import UserSerializer, UserUpdateSerializer
+from permissions.is_superuser import IsSuperuser
 
 UserModel: CustomUser = get_user_model()
 
@@ -24,6 +26,7 @@ class UserRetrieveUpdateDestroyView(RetrieveUpdateDestroyAPIView):
 
 
 class UserActivateView(GenericAPIView):
+    permission_classes =[IsAdminUser]
     def get(self, *args, **kwargs):
         pk = self.kwargs.get('pk')
         get_object_or_404(UserModel, pk=pk)
@@ -35,6 +38,7 @@ class UserActivateView(GenericAPIView):
 
 
 class UserDeactivateView(GenericAPIView):
+    permission_classes =[IsAdminUser]
     def get(self, *args, **kwargs):
         pk = self.kwargs.get('pk')
         get_object_or_404(UserModel, pk=pk)
@@ -46,6 +50,7 @@ class UserDeactivateView(GenericAPIView):
 
 
 class UserDoSuperuserView(GenericAPIView):
+    permission_classes =[IsSuperuser]
     def get(self, *args, **kwargs):
         pk = self.kwargs.get('pk')
         get_object_or_404(UserModel, pk=pk)
@@ -57,6 +62,7 @@ class UserDoSuperuserView(GenericAPIView):
 
 
 class UserDoUserView(GenericAPIView):
+    permission_classes =[IsSuperuser]
     def get(self, *args, **kwargs):
         pk = self.kwargs.get('pk')
         get_object_or_404(UserModel, pk=pk)
