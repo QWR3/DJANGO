@@ -1,7 +1,8 @@
 from datetime import timedelta
 
-from rest_framework_simplejwt.tokens import AccessToken, BlacklistMixin
 from rest_framework_simplejwt.token_blacklist.models import BlacklistedToken, OutstandingToken
+from rest_framework_simplejwt.tokens import AccessToken, BlacklistMixin
+
 from exceptions.jwt_exception import JwtException
 
 

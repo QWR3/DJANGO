@@ -1,4 +1,5 @@
 from django.contrib.auth import get_user_model
+
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.generics import GenericAPIView, ListCreateAPIView, RetrieveUpdateDestroyAPIView, get_object_or_404
 from rest_framework.mixins import UpdateModelMixin
@@ -37,8 +38,7 @@ class UserActivateView(GenericAPIView):
 
     def get(self, *args, **kwargs):
         pk = self.kwargs.get('pk')
-        get_object_or_404(UserModel, pk=pk)
-        user = UserModel.objects.get(pk=pk)
+        user = get_object_or_404(UserModel, pk=pk)
         serializer = UserUpdateSerializer(instance=user, data={"is_active": True})
         serializer.is_valid(raise_exception=True)
         serializer.save()
@@ -50,8 +50,7 @@ class UserDeactivateView(GenericAPIView):
 
     def get(self, *args, **kwargs):
         pk = self.kwargs.get('pk')
-        get_object_or_404(UserModel, pk=pk)
-        user = UserModel.objects.get(pk=pk)
+        user = get_object_or_404(UserModel, pk=pk)
         serializer = UserUpdateSerializer(instance=user, data={"is_active": False})
         serializer.is_valid(raise_exception=True)
         serializer.save()
@@ -63,8 +62,7 @@ class UserDoSuperuserView(GenericAPIView):
 
     def get(self, *args, **kwargs):
         pk = self.kwargs.get('pk')
-        get_object_or_404(UserModel, pk=pk)
-        user = UserModel.objects.get(pk=pk)
+        user = get_object_or_404(UserModel, pk=pk)
         serializer = UserUpdateSerializer(instance=user, data={"is_superuser": True})
         serializer.is_valid(raise_exception=True)
         serializer.save()
@@ -76,8 +74,7 @@ class UserDoUserView(GenericAPIView):
 
     def get(self, *args, **kwargs):
         pk = self.kwargs.get('pk')
-        get_object_or_404(UserModel, pk=pk)
-        user = UserModel.objects.get(pk=pk)
+        user = get_object_or_404(UserModel, pk=pk)
         serializer = UserUpdateSerializer(instance=user, data={"is_superuser": False})
         serializer.is_valid(raise_exception=True)
         serializer.save()
